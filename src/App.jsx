@@ -4,7 +4,8 @@ import Login from "./components/Login";
 function App(){
     return(
         <>
-            <Header />
+            <Header titulo="Lanchonete Xpress" 
+            subtitulo="O melhor da região" />
             <Login />
         </>
     )
