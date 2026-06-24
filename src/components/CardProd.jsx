@@ -12,21 +12,3 @@ function CardProd(props){
 }
 
 export default CardProd 
-
-
-
-/*
-<div className="card">
-<h2>X-Burger</h2>
-<h3>R$ 15,00</h3>
-</div>  
-<div className="card">
-<h2>X-Salada</h2>
-<h3>R$ 17,90</h3>
-</div>
-<div className="card">
-<h2>Refrigerante</h2>
-<h3>R$6,00</h3>
-</div>
-*/
-
