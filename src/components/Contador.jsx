@@ -1,16 +1,13 @@
-import {useState} from "react";
-
-function Contador(){
-    const [contador,setContador] = useState(0)
+function Contador({quantidade,setQuantidade}){
 
     return (
 
         <>
-            <h1>{contador}</h1>
+            <h1>{quantidade}</h1>
 
-            <button onClick={() => setContador(contador+1)}>Adicionar</button>
-            <button onClick={() => setContador(contador-1)}>Diminuir</button>
-            <button onClick={() => setContador(0)}>Zerar</button>
+            <button onClick={() => setQuantidade(quantidade+1)}>Adicionar</button>
+            <button onClick={() => { if (quantidade > 0) setQuantidade(quantidade-1)}}>Diminuir</button>
+            <button onClick={() => setQuantidade(0)}>Zerar</button>
         </>
     )
 }
