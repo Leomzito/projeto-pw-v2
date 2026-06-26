@@ -1,7 +1,9 @@
 .cardProd {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row; /* MUDOU AQUI: Alinha os itens em linha (lado a lado) */
+    flex-wrap: wrap;     /* ADICIONADO: Se a tela for pequena, os cards pulam para a linha de baixo */
+    justify-content: center; /* ADICIONADO: Centraliza os cards na tela */
+    gap: 20px;           /* ADICIONADO: Cria um espaço elegante entre um card e outro */
     font-family: sans-serif;
     margin-top: 10px;
 }
@@ -19,8 +21,8 @@
     width: 300px;
     border: 1px solid #000000;
     border-radius: 4px;
-    margin-bottom: 20px;
-    background-color:aliceblue;
+    /* margin-bottom: 20px;  Opcional: O 'gap' acima já resolve o espaçamento */
+    background-color: aliceblue;
 }
 
 .cardProd-container input {
