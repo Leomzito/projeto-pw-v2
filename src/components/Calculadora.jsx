@@ -1,4 +1,4 @@
-
+import './Calculadora.css'
 import Contador from './Contador'
 import {useState} from "react"
 
@@ -14,8 +14,8 @@ function Calculadora(){
     const totalGeral = totalBurguer+totalRefri+totalSalada
 
     return(
-        <div className="cardProd">
-        <div className="cardProd-container">
+        <div className="cardCalc">
+        <div className="cardCalc-container">
             <h2>X-Burguer</h2>
             <h3>R$ 15.90</h3>
             <h3>Quantidade</h3>
@@ -23,9 +23,9 @@ function Calculadora(){
                 quantidade={qtdBurguer}
                 setQuantidade={setqtdBurguer}
             />
-            <h3>Total: {totalBurguer.toFixed(2)}</h3>
+            <h2>Total: {totalBurguer.toFixed(2)}</h2>
         </div>
-        <div className="cardProd-container">
+        <div className="cardCalc-container">
             <h2>X-Salada</h2>
             <h3>R$ 17.90</h3>
             <h3>Quantidade</h3>
@@ -33,9 +33,9 @@ function Calculadora(){
                 quantidade={qtdSalada}
                 setQuantidade={setqtdSalada}
             />
-            <h3>Total: {totalSalada.toFixed(2)}</h3>
+            <h2>Total: {totalSalada.toFixed(2)}</h2>
         </div>
-        <div className="cardProd-container">
+        <div className="cardCalc-container">
             <h2>Refrigerante</h2>
             <h3>R$ 6.00</h3>
             <h3>Quantidade</h3>
@@ -43,7 +43,7 @@ function Calculadora(){
                 quantidade={qtdRefri}
                 setQuantidade={setqtdRefri}
             />
-            <h3>Total: {totalRefri.toFixed(2)}</h3>
+            <h2>Total: {totalRefri.toFixed(2)}</h2>
         </div>
         <div>
             <h2>
